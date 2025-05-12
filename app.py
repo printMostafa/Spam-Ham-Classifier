@@ -13,6 +13,22 @@ except Exception as e:
 st.title("📧 Email Spam Detector")
 st.write("This app helps you check if an email is spam or not")
 
+# Model Performance Section
+st.sidebar.title("📊 نتائج أداء النموذج")
+st.sidebar.write("معلومات عن أداء النموذج على بيانات الاختبار:")
+st.sidebar.metric("دقة النموذج", "98.62%")
+
+performance_details = """
+تفاصيل الأداء:
+- Precision (Spam): 98%
+- Recall (Spam): 99%
+- F1-score (Spam): 99%
+- Precision (Normal): 99%
+- Recall (Normal): 98%
+- F1-score (Normal): 99%
+"""
+st.sidebar.text(performance_details)
+
 # Text input box
 email_text = st.text_area(
     "Enter your email text here:",
