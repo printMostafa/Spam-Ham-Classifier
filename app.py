@@ -14,12 +14,12 @@ st.title("📧 Email Spam Detector")
 st.write("This app helps you check if an email is spam or not")
 
 # Model Performance Section
-st.sidebar.title("📊 نتائج أداء النموذج")
-st.sidebar.write("معلومات عن أداء النموذج على بيانات الاختبار:")
-st.sidebar.metric("دقة النموذج", "98.62%")
+st.sidebar.title("📊 Model Performance")
+st.sidebar.write("Model performance metrics on test data:")
+st.sidebar.metric("Model Accuracy", "98.62%")
 
 performance_details = """
-تفاصيل الأداء:
+Performance Details:
 - Precision (Spam): 98%
 - Recall (Spam): 99%
 - F1-score (Spam): 99%
